@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sfan.zzy.demo.MainActivity">
+    <item
+        android:id="@+id/floating_action_button"
+        android:orderInCategory="1"
+        android:title="@string/floating_action_button"
+        app:showAsAction="never" />
+
+    <!-- 子菜单 -->
+    <item
+        android:id="@+id/app_bar_layout"
+        android:orderInCategory="2"
+        android:title="@string/app_bar_layout">
+        <menu>
+            <item
+                android:id="@+id/tab_layout"
+                android:orderInCategory="1"
+                android:title="@string/tab_layout"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/collapsing_toolbar_layout"
+                android:orderInCategory="2"
+                android:title="@string/collapsing_toolbar_layout"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/behavior"
+        android:orderInCategory="3"
+        android:title="@string/behavior"
+        app:showAsAction="never" />
+
+</menu>
